@@ -1,4 +1,3 @@
-import { TestComponent } from "@/components/component/test-component";
 import Image from "next/image";
 
 
