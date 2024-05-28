@@ -7,6 +7,12 @@ const nextConfig = {
                 hostname: 'cdn.dummyjson.com',
                 port: '',
                 pathname: '/product-images/**'
+            },
+            {
+                protocol: 'https',
+                hostname: 'avatars.mds.yandex.net',
+                port: '',
+                pathname: '/**'
             }
         ]
     }

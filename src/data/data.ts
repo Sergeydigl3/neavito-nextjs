@@ -3,6 +3,21 @@
 const data = {
     "products": [
       {
+        "id": 0,
+        "title": "Ford Mustang Shelby 2018 dlya Yuuli",
+        "description": "An apple mobile which is nothing like apple",
+        "price": 0,
+        "discountPercentage": 12.96,
+        "rating": 4.69,
+        "stock": 94,
+        "brand": "Apple",
+        "category": "smartphones",
+        "thumbnail": "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg",
+        "images": [
+          "https://avatars.mds.yandex.net/get-autoru-reviews/1676382/yOgZCpJ0N0kBVa3NSg4C9nXvlN3WT6Q2m/500x400",
+        ]
+      },
+      {
         "id": 1,
         "title": "iPhone 9",
         "description": "An apple mobile which is nothing like apple",
