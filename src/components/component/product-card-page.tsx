@@ -11,6 +11,7 @@ import { SelectValue, SelectTrigger, SelectItem, SelectContent, Select } from "@
 import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar"
 import { CardContent, Card } from "@/components/ui/card"
 import { Textarea } from "@/components/ui/textarea"
+import React, { SVGProps } from 'react';
 
 export function ProductCardPage() {
   return (
@@ -448,7 +449,7 @@ export function ProductCardPage() {
   )
 }
 
-function CalendarIcon(props) {
+function CalendarIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -470,8 +471,7 @@ function CalendarIcon(props) {
   )
 }
 
-
-function FilterIcon(props) {
+function FilterIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -490,8 +490,7 @@ function FilterIcon(props) {
   )
 }
 
-
-function LocateIcon(props) {
+function LocateIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -514,8 +513,7 @@ function LocateIcon(props) {
   )
 }
 
-
-function SearchIcon(props) {
+function SearchIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -535,8 +533,7 @@ function SearchIcon(props) {
   )
 }
 
-
-function StarIcon(props) {
+function StarIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -555,8 +552,7 @@ function StarIcon(props) {
   )
 }
 
-
-function XIcon(props) {
+function XIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}

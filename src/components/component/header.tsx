@@ -5,7 +5,7 @@ import { DropdownMenuTrigger, DropdownMenuContent, DropdownMenu } from "@/compon
 import { Label } from "@/components/ui/label"
 import { SelectValue, SelectTrigger, SelectItem, SelectContent, Select } from "@/components/ui/select"
 import { CardContent, Card } from "@/components/ui/card"
-
+import { ThemeToggle } from "../theme-toogle"
 
 import Image from 'next/image'
 import { useState } from "react"; // import state
@@ -80,6 +80,8 @@ export default function MyHeader() {
                     <a className="bg-white text-gray-900 px-4 py-2 rounded-md hover:bg-gray-100 border border-gray-200 ml-2 hidden md:block" href="/sign-up">
                         Sign Up
                     </a>
+                    
+                    <ThemeToggle />
                 </div>
                 <div
                     className="md:hidden"
