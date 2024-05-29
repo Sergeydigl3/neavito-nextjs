@@ -97,7 +97,7 @@ export function ProductCardPage() {
         </div>
       </header> */}
       <main>
-        <section className="py-12 md:py-20">
+        <section className="py-12 md:py-10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
@@ -122,7 +122,7 @@ export function ProductCardPage() {
                   <span className="text-gray-500 ml-2">(123 reviews)</span>
                 </div>
                 <p className="text-2xl font-bold mb-4">$99.99</p>
-                <Button className="w-full mb-2" variant="primary">
+                <Button className="w-full mb-2" variant="default">
                   Contact Seller
                 </Button>
                 <p className="text-gray-500 mb-4">You can ask the seller any questions you have.</p>
@@ -145,6 +145,11 @@ export function ProductCardPage() {
                   <p className="text-gray-500">123 Main St.</p>
                   <p className="text-gray-500">Anytown, USA 12345</p>
                 </div>
+                
+                <Textarea
+                  className="w-full mb-4 rounded-lg border border-gray-200 p-2"
+                  placeholder="Ask the seller a question..."
+                />
                 <div className="flex flex-wrap gap-2 mb-4">
                   <Button size="sm" variant="outline">
                     Question 1
@@ -159,11 +164,10 @@ export function ProductCardPage() {
                     Question 4
                   </Button>
                 </div>
-                <Textarea
-                  className="w-full mb-4 rounded-lg border border-gray-200 p-2"
-                  placeholder="Ask the seller a question..."
-                />
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                <Button className="w-full">
+                  Ask Question
+                </Button>
+                {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                   <Card className="bg-white rounded-lg shadow">
                     <CardContent>
                       <img
@@ -198,7 +202,7 @@ export function ProductCardPage() {
                       </div>
                     </CardContent>
                   </Card>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

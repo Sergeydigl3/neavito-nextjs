@@ -14,7 +14,6 @@ export default function Home() {
     //   <TestComponent />
     // </main>
     <>
-      <MyHeader />
       <main>
         <WelcomeBannerSection />
         <FeatureProductsSection products={ProductsData} />
