@@ -259,7 +259,7 @@ export function ProductCardPage() {
                       <StarIcon className="h-4 w-4" />
                     </div>
                     <p className="mt-2 text-gray-500">
-                      The seller was very professional and the item was exactly as described. I'm very satisfied with
+                      The seller was very professional and the item was exactly as described. Im very satisfied with
                       this purchase.
                     </p>
                   </div>
@@ -312,7 +312,7 @@ export function ProductCardPage() {
                       <XIcon className="h-4 w-4" />
                     </div>
                     <p className="mt-2 text-gray-500">
-                      The seller was very helpful and the item was delivered quickly. I'm satisfied with the overall
+                      The seller was very helpful and the item was delivered quickly. Im satisfied with the overall
                       experience.
                     </p>
                   </div>
