@@ -13,7 +13,7 @@ import Image from 'next/image'
 
 export const ProductCardPage: React.FC<{ suggestedProducts: ProductCardProps[], product?: ProductCardProps }> = ({ suggestedProducts, product }) => {
   if (!suggestedProducts) suggestedProducts = [];
-
+  if (!product) product = suggestedProducts[0];
   const [question, setQuestion] = useState('');
 
   const handleQuestionClick = (q: string) => {
@@ -30,7 +30,7 @@ export const ProductCardPage: React.FC<{ suggestedProducts: ProductCardProps[], 
                 <Image
                   alt="Product Image"
                   className="w-full h-auto rounded-lg"
-                  src={product?.imageUrls[0]}
+                  src={product.imageUrls[0]}
                   width={640}
                   height={400}
                 />
