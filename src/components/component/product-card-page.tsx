@@ -85,16 +85,18 @@ export const ProductCardPage: React.FC<{ suggestedProducts: ProductCardProps[], 
                   onChange={(e) => setQuestion(e.target.value)}
                 />
                 <div className="flex flex-wrap gap-2 mb-4 ">
-                  <Button className="sm" size="sm" variant="outline" onClick={() => handleQuestionClick('Почему квадратные колеса не популярны для автомобилей?')}>
-                    Почему квадратные колеса не популярны для автомобилей?
+                  <Button className="py-10" size="sm" variant="outline" onClick={() => handleQuestionClick('Почему квадратные колеса не популярны для автомобилей?')}>
+                    <span className="w-full text-left whitespace-normal">Почему квадратные колеса не популярны для автомобилей?</span>
+
                   </Button>
-                  <Button size="sm" variant="outline" onClick={() => handleQuestionClick('Почему круглая пицца режется на треугольные кусочки и кладется в квадратную коробку?')}>
-                    Почему круглая пицца режется на треугольные кусочки и кладется в квадратную коробку?
+                  <Button className="py-10" size="sm" variant="outline" onClick={() => handleQuestionClick('Почему круглая пицца режется на треугольные кусочки и кладется в квадратную коробку?')}>
+                    <span className="w-full text-left whitespace-normal">Почему круглая пицца режется на треугольные кусочки и кладется в квадратную коробку?</span>
+
                   </Button>
-                  <Button className="py-6" size="sm" variant="outline" onClick={() => handleQuestionClick('Если кошка всегда приземляется на лапы, а бутерброд с маслом падает маслом вниз, что произойдет, если привязать бутерброд к спине кошки?')}>
+                  <Button className="py-10" size="sm" variant="outline" onClick={() => handleQuestionClick('Если кошка всегда приземляется на лапы, а бутерброд с маслом падает маслом вниз, что произойдет, если привязать бутерброд к спине кошки?')}>
                     <span className="w-full text-left whitespace-normal">Если кошка всегда приземляется на лапы, а бутерброд с маслом падает маслом вниз, что произойдет, если привязать бутерброд к спине кошки?</span>
                   </Button>
-                  <Button size="sm" variant="outline" onClick={() => handleQuestionClick('Question 4')}>
+                  <Button className="py-10" size="sm" variant="outline" onClick={() => handleQuestionClick('Question 4')}>
                     Question 4
                   </Button>
                 </div>
