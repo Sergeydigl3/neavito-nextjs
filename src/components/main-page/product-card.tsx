@@ -6,6 +6,7 @@ import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link'
 
 export interface ProductCardProps {
     imageUrls: string[];
@@ -13,9 +14,10 @@ export interface ProductCardProps {
     price: string;
     location: string;
     time: string;
+    productId: number;
 }
 
-const ProductCard: React.FC<ProductCardProps> = ({ imageUrls, title, price, location, time }) => {
+const ProductCard: React.FC<ProductCardProps> = ({ imageUrls, title, price, location, time, productId }) => {
     const [emblaRef, emblaApi] = useEmblaCarousel({
         loop: true,
         // dragFree: true,
@@ -47,7 +49,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ imageUrls, title, price, loca
 
 
                 <div className="pt-4 pl-3 pr-1 space-y-3">
-                    <h3 className="font-semibold text-lg">{title}</h3>
+                    <Link href={`/product/${productId}`}><h3 className="font-semibold text-lg hover:underline">{title}</h3></Link>
+                    {/* <h3 className="font-semibold text-lg">{title}</h3> */}
                     <p className="pt-5 text-xl font-bold">{price}</p>
                     <p className="text-sm text-gray-500 dark:text-gray-400">{location}</p>
                     <p className="text-xs text-gray-400 ">{time}</p>

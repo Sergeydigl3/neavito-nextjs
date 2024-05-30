@@ -176,6 +176,7 @@ const data = {
       price: `${product.price} ₽`,
       location: locations[Math.floor(Math.random() * locations.length)],
       time: times[Math.floor(Math.random() * times.length)],
+      productId: product.id
     };
   });
 
