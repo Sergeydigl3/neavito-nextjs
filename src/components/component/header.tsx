@@ -17,42 +17,43 @@ export default function MyHeader() {
     const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
 
     return (
-        <header className="bg-white shadow">
+        <header className="bg-gray-100 dark:bg-gray-900 shadow">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
                 <div className="flex items-center">
                     <Image
+                        // style={{ filter: 'invert(100%)' }}
                         src="/final_logo.svg" // Path to your image
                         alt="Logo"
                         width={180} // width in pixels
                         height={32} // height in pixels
-                        className="h-10 w-auto hidden md:block"
+                        className="h-10 w-auto hidden md:block dark:invert"
                     />
                     <Image
                         src="/final_logo_croped.svg" // Path to your image
                         alt="Logo"
                         width={180} // width in pixels
                         height={32} // height in pixels
-                        className="h-10 w-auto md:show md:hidden"
+                        className="h-10 w-auto md:show md:hidden dark:invert"
                     />
                     <nav className="ml-10 hidden md:block">
                         <ul className="flex space-x-4">
                             <li>
-                                <a className="text-gray-500 hover:text-gray-900" href="#">
+                                <a className="text-gray-500 hover:text-gray-900 dark:hover:text-white" href="/">
                                     Home
                                 </a>
                             </li>
                             <li>
-                                <a className="text-gray-500 hover:text-gray-900" href="#">
+                                <a className="text-gray-500 hover:text-gray-900 dark:hover:text-white" href="#">
                                     Catalog
                                 </a>
                             </li>
                             <li>
-                                <a className="text-gray-500 hover:text-gray-900" href="#">
+                                <a className="text-gray-500 hover:text-gray-900 dark:hover:text-white" href="#">
                                     About
                                 </a>
                             </li>
                             <li>
-                                <a className="text-gray-500 hover:text-gray-900" href="#">
+                                <a className="text-gray-500 hover:text-gray-900 dark:hover:text-white" href="#">
                                     Contact
                                 </a>
                             </li>
@@ -74,7 +75,7 @@ export default function MyHeader() {
                         Sign Up
                     </button> */}
 
-                    <a className="bg-gray-900 text-white px-4 py-2 rounded-md hover:bg-gray-800 ml-4 hidden md:block " href="/sign-in">
+                    <a className="bg-gray-900 dark:bg-gray-950 text-white px-4 py-2 rounded-md hover:bg-gray-800 dark:hover:bg-gray-700 ml-4 hidden md:block " href="/sign-in">
                         Sign In
                     </a>
                     <a className="bg-white text-gray-900 px-4 py-2 rounded-md hover:bg-gray-100 border border-gray-200 ml-2 hidden md:block" href="/sign-up">
